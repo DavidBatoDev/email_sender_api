@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
-from email_sender.email_sender import EmailSender
-from email_sender.config import SMTP_SERVER, SMTP_PORT, EMAIL_USER, EMAIL_PASSWORD
+from email_api.email_sender.email_sender import EmailSender
+from email_api.email_sender.config import SMTP_SERVER, SMTP_PORT, EMAIL_USER, EMAIL_PASSWORD
+
 
 app = Flask(__name__)
 
