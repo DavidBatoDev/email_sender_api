@@ -14,7 +14,10 @@ This is a Flask-based API that allows you to send emails via an SMTP server. It 
 
 - Python 3.x
 - Docker (for containerization)
-- An SMTP email service (e.g., Gmail)
+- An SMTP email service (e.g., Gmail):
+    - Use an SMTP email service to send emails.
+    - For Gmail, ensure that 2-Factor Authentication (2FA) is enabled on your account.
+    - Generate an App Password in your Gmail account settings to use instead of your primary password for email authentication in the application.
 
 ### Local Development
 
