@@ -58,7 +58,6 @@ python email_api/email_api.py
 
 Or use waitress to run the app:
 ```bash
-Copy code
 waitress-serve --port=5000 email_api.email_api:app
 ```
 Now, you can send a POST request to http://localhost:5000/send-email to test the email sending functionality.
