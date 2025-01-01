@@ -15,11 +15,12 @@ def send_email():
         subject = data.get('subject')
         body = data.get('body')
         to_emails = data.get('to_emails')
+        is_html = data.get('is_html', False)
 
         if not subject or not body or not to_emails:
             return jsonify({"error": "Missing required fields (subject, body, to_emails)"}), 400
 
-        email_sender.send_email(subject, body, to_emails)
+        email_sender.send_email(subject, body, to_emails, is_html)
         return jsonify({"message": "Email sent successfully"}), 200
     except Exception as e:
         return jsonify({"error": str(e)}), 500
