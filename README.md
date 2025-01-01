@@ -73,6 +73,16 @@ Now, you can send a POST request to http://localhost:5000/send-email to test the
     "to_emails": ["recipient@example.com"]
 }
 ```
+or with html
+```json
+{
+    "subject": "Test HTML Email",
+    "body": "<h1>This is an HTML email!</h1><p>This is a test email with <strong>HTML</strong> content.</p>",
+    "to_emails": ["recipient@example.com"],
+    "is_html":true
+}
+
+```
 ### 2. Python Example using requests Library
 If you want to send a test email via Python, use the following script:
 
@@ -139,6 +149,5 @@ Once your service is live, you can send requests to the provided Render URL (e.g
 - **Using Postman or cURL**: Instructions to test the `/send-email` API endpoint with Postman or cURL.
 - **Docker Deployment**: Steps to build and run the app using Docker.
 - **Render Deployment**: How to deploy the app on Render using Docker.
-
-Feel free to update the repository URL and any personal or project-specific details before committing it to GitHub.
 ```
+Feel free to update the repository URL and any personal or project-specific details before committing it to GitHub.
